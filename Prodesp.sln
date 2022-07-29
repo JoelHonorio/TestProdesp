@@ -9,6 +9,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prodesp.Dados", "Prodesp.Da
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prodesp.Negocios", "Prodesp.Negocios\Prodesp.Negocios.csproj", "{04248849-9AC6-4D56-BC4A-EA0CC9FDDBF5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Script-Migration", "Script-Migration", "{398338F0-1D36-4EA4-AAEF-C47F7D4DB0D4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "v1.0.0", "v1.0.0", "{4DE0409B-3F20-4129-B5A6-F2CDE9E3F2C3}"
+	ProjectSection(SolutionItems) = preProject
+		01 - Criação das tabelas Fabricante e Imunobiológico.sql = 01 - Criação das tabelas Fabricante e Imunobiológico.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +37,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4DE0409B-3F20-4129-B5A6-F2CDE9E3F2C3} = {398338F0-1D36-4EA4-AAEF-C47F7D4DB0D4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9E064607-0EB3-4D61-BA85-86D50778FE3B}
