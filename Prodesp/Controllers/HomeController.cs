@@ -1,4 +1,4 @@
-﻿#region Using
+﻿#region Usings
 
 using Microsoft.AspNetCore.Mvc;
 
@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Prodesp.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         #region Injeção de dependências
 
