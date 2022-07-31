@@ -9,6 +9,6 @@ namespace Prodesp.Negocios.IRepositories
     public interface IFabricanteRepository : IRepository<Fabricante>
     {
         Task<Fabricante> ObterFabricante(Guid Id);
-        Task<List<Fabricante>> ObterTodosFabricantes();
+        Task<IEnumerable<Fabricante>> ObterTodosFabricantes();
     }
 }

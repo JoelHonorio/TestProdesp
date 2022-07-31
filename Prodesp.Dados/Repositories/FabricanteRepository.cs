@@ -18,7 +18,7 @@ namespace Prodesp.Dados.Repositories
             return await Db.Fabricante.AsNoTracking().FirstOrDefaultAsync(f => f.Id == Id);
         }
 
-        public async Task<List<Fabricante>> ObterTodosFabricantes()
+        public async Task<IEnumerable<Fabricante>> ObterTodosFabricantes()
         {
             return await Db.Fabricante.AsNoTracking().OrderBy(p => p.Marca).ToListAsync();
         }

@@ -18,7 +18,7 @@ namespace Prodesp.Dados.Repositories
             return await Db.Imunobiologico.AsNoTracking().FirstOrDefaultAsync(i => i.Id == Id);
         }
 
-        public async Task<List<Imunobiologico>> ObterTodosImunobiologicos()
+        public async Task<IEnumerable<Imunobiologico>> ObterTodosImunobiologicos()
         {
             return await Db.Imunobiologico.AsNoTracking().OrderBy(i => i.Fabricante).ToListAsync();
         }

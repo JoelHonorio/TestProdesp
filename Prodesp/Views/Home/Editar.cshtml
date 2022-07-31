@@ -1,0 +1,59 @@
+﻿@model Prodesp.ViewModels.ImunobiologicoViewModel
+
+@{
+    ViewData["Title"] = "Editar imunobiológico";
+}
+
+<h4 style="padding-top: 30px">@ViewData["Title"] </h4>
+
+<hr/>
+
+@if (@Model is not null)
+{
+    @if (@Model.AnoLote < DateTime.Now.Year -1)
+    {
+        <div class="alert alert-warning" role="alert">
+            O Ano do lote deve ser maior ou igual ao ano anterior!
+        </div>
+    }
+}
+
+<div class="row">
+    <div class="col-md-10">
+        <form enctype="multipart/form-data" asp-action="Editar">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <input type="hidden" asp-for="Id" />
+
+            <div class="form-group">
+                <label asp-for="AnoLote" class="control-label"></label>
+                <input asp-for="AnoLote" class="form-control" />
+                <span asp-validation-for="AnoLote" class="text-danger"></span>
+            </div><br/>
+
+            <div class="form-group">
+                <label asp-for="FabricanteId" class="control-label"></label>
+                <select asp-for="FabricanteId" class ="form-control" asp-items="@(new SelectList(ViewBag.Fabricantes, "Id", "Marca"))">
+                    <option></option>
+                </select>
+                <span asp-validation-for="FabricanteId" class="text-danger"></span>
+            </div><br/>
+
+            <div class="form-group">
+                <label asp-for="Descricao" class="control-label"></label>
+                <textarea cols="40" rows="5" asp-for="Descricao" class="form-control"></textarea>
+                <span asp-validation-for="Descricao" class="text-danger"></span>
+            </div><br/>
+
+            <input type="hidden" asp-for="DataCriacao" />
+
+            <input type="hidden" asp-for="DataModificacao" />
+
+            <div class="form-group">
+                <input type="submit" value="Salvar" class="btn btn-success" />
+
+                <a class="btn btn-warning" asp-action="Index"><spam class="fa fa-long-arrow-alt-left"></spam></a>
+            </div><br/>
+        </form>
+    </div>
+</div>

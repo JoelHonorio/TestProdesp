@@ -6,6 +6,6 @@
         public DateTime DataCriacao { get; set; }
         public DateTime DataModificacao { get; set; }
 
-        public List<Imunobiologico>? Imunobiologicos { get; set; }
+        public IEnumerable<Imunobiologico>? Imunobiologicos { get; set; }
     }
 }

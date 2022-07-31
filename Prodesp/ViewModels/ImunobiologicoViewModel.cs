@@ -26,7 +26,6 @@ namespace Prodesp.ViewModels
         public Int32 AnoLote { get; set; }
 
         [DisplayName("Data de criação")]
-        [Required(ErrorMessage = "O campo {0} é obrigatório")]
         public DateTime DataCriacao { get; set; }
 
         [DisplayName("Data de modificação")]
@@ -34,6 +33,10 @@ namespace Prodesp.ViewModels
 
         public FabricanteViewModel? Fabricante { get; set; }
 
-        public List<FabricanteViewModel>? Fabricantes { get; set; }
+        public IEnumerable<FabricanteViewModel>? Fabricantes { get; set; }
+
+        public string? FabricanteString { get; set; }
+
+        public string? DataCriacaoString { get; set; }
     }
 }

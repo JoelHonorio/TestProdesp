@@ -1,5 +1,37 @@
-﻿<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+﻿@model IEnumerable<Prodesp.ViewModels.ImunobiologicoViewModel>
 
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+@{
+    ViewData["Title"] = "Imunobiológicos";
+}
+
+<h1 style="padding-top:3%">@ViewData["Title"]</h1><br/>
+
+<p><a class="btn btn-primary right" asp-action="Criar"><spam class="fa fa-plus"></a></p>
+
+<table class="table table-hover">
+    <thead class="bg-dark text-white">
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.AnoLote)</th>
+            <th>@Html.DisplayNameFor(model => model.Fabricante)</th>
+            <th>@Html.DisplayNameFor(model => model.Descricao)</th>
+            <th>@Html.DisplayNameFor(model => model.DataCriacao)</th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model) {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.AnoLote)</td>
+                <td>@Html.DisplayFor(modelItem => item.FabricanteString)</td>
+                <td>@Html.DisplayFor(modelItem => item.Descricao)</td>
+                <td>@Html.DisplayFor(modelItem => item.DataCriacaoString)</td>
+
+                <td style="text-align:right!important;">
+                    <a class="btn btn-warning" asp-action="Editar" asp-route-id="@item.Id"><spam class="fa fa-pencil-alt"></a>
+                    <a class="btn btn-danger" asp-action="Deletar" asp-route-id="@item.Id"><spam class="fa fa-trash-alt"></a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
