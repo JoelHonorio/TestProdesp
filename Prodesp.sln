@@ -5,15 +5,16 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prodesp", "Prodesp\Prodesp.csproj", "{3B6E3A6C-F3CD-4CCA-8ACE-9BADED5B8061}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prodesp.Dados", "Prodesp.Dados\Prodesp.Dados.csproj", "{C7A4C2B4-A91F-4F8B-B379-F76F0629BFC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prodesp.Dados", "Prodesp.Dados\Prodesp.Dados.csproj", "{C7A4C2B4-A91F-4F8B-B379-F76F0629BFC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prodesp.Negocios", "Prodesp.Negocios\Prodesp.Negocios.csproj", "{04248849-9AC6-4D56-BC4A-EA0CC9FDDBF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prodesp.Negocios", "Prodesp.Negocios\Prodesp.Negocios.csproj", "{04248849-9AC6-4D56-BC4A-EA0CC9FDDBF5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Script-Migration", "Script-Migration", "{398338F0-1D36-4EA4-AAEF-C47F7D4DB0D4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "v1.0.0", "v1.0.0", "{4DE0409B-3F20-4129-B5A6-F2CDE9E3F2C3}"
 	ProjectSection(SolutionItems) = preProject
 		01 - Criação das tabelas Fabricante e Imunobiológico.sql = 01 - Criação das tabelas Fabricante e Imunobiológico.sql
+		02 - Inserção para a tabela Fabricante.sql = 02 - Inserção para a tabela Fabricante.sql
 	EndProjectSection
 EndProject
 Global
