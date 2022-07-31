@@ -9,6 +9,8 @@ git clone -b master https://github.com/JoelHonorio/TestProdesp.git</i></b><br/><
 
 <b><i>-Feito estes passos a aplicação deverá já estar executando corretamente!.</i></b><br/><br/>
 
-<b><i>Obs: Os Scripts foram criados a partir de Migrations executadas de acordo com os comando abaixo, e salvo na pasta "Script-Migration".</i></b><br/>
-Add-Migration Initial -Verbose -Context ProdespDbContext, usando o projeto padrão "Prodesp.Dados"<br/>
-Script-Migration -Context ProdespDbContext, também usando o projeto padrão "Prodesp.Dados"
+<b><i>Obs: Os Scripts foram criados a partir de Migrations executadas no console do gerenciador de pacotes de acordo com os comando abaixo, e salvo na pasta "Script-Migration".</i></b><br/>
+Add-Migration Initial -Verbose -Context ProdespDbContext, usando o projeto padrão "Prodesp.Dados".<br/>
+Script-Migration -Context ProdespDbContext, também usando o projeto padrão "Prodesp.Dados".
+
+<b><i>Para desenvolver este projeto foram ultilizados, os seguintes programas: Visual Studio 2022 e SQL Server Management Studio.</i></b>
