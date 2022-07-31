@@ -11,9 +11,11 @@ namespace Prodesp.ViewModels
     {
         [Key]
         public Guid Id { get; set; }
+
         public string? Marca { get; set; }
         public DateTime DataCriacao { get; set; }
         public DateTime DataModificacao { get; set; }
+
         public IEnumerable<ImunobiologicoViewModel>? Imunobiologicos { get; set; }
     }
 }
